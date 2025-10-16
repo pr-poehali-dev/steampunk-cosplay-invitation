@@ -1,53 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 32 45% 93%;
+    --foreground: 20 50% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 38 50% 96%;
+    --card-foreground: 20 50% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 38 50% 96%;
+    --popover-foreground: 20 50% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 45% 35%;
+    --primary-foreground: 38 50% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 43 74% 49%;
+    --secondary-foreground: 20 50% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 25% 75%;
+    --muted-foreground: 20 35% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 20 50% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 38 50% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 20% 60%;
+    --input: 35 20% 60%;
+    --ring: 25 45% 35%;
 
     --radius: 0.5rem;
 
+    --brass: 25 45% 35%;
+    --bronze: 20 35% 18%;
+    --gold: 43 74% 49%;
+    --paper: 32 45% 93%;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +97,64 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Cormorant", serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cinzel", serif;
+  }
+}
+
+@layer components {
+  .vintage-ornament {
+    position: relative;
+  }
+
+  .vintage-ornament::before,
+  .vintage-ornament::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L60 20 Q70 25 75 35 L85 45 Q90 55 85 65 L75 75 Q70 80 60 85 L50 95' stroke='%238B4513' stroke-width='2' fill='none' opacity='0.3'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  .vintage-ornament::before {
+    top: -40px;
+    left: -40px;
+  }
+
+  .vintage-ornament::after {
+    bottom: -40px;
+    right: -40px;
+    transform: rotate(180deg);
+  }
+
+  .gear-rotate {
+    animation: rotate 20s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .paper-texture {
+    background-image:
+      linear-gradient(rgba(139, 69, 19, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 69, 19, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 }
