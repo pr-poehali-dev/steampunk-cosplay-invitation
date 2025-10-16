@@ -1,21 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
 
 const Index = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("RSVP submitted:", formData);
-  };
 
   return (
     <div className="min-h-screen relative overflow-hidden" 
@@ -85,7 +71,7 @@ const Index = () => {
 
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513] hover:shadow-xl transition-all duration-300 hover-scale">
                 <div className="text-center space-y-4">
                   <Icon name="Calendar" className="w-12 h-12 text-[#D4AF37] mx-auto" />
@@ -104,17 +90,6 @@ const Index = () => {
                   <p className="text-[#8B4513] text-lg">
                     Центральный<br />
                     Выставочный Зал
-                  </p>
-                </div>
-              </Card>
-
-              <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513] hover:shadow-xl transition-all duration-300 hover-scale">
-                <div className="text-center space-y-4">
-                  <Icon name="Users" className="w-12 h-12 text-[#D4AF37] mx-auto" />
-                  <h3 className="text-2xl font-bold text-[#2C1810]">Дресс-код</h3>
-                  <p className="text-[#8B4513] text-lg">
-                    Стимпанк<br />
-                    Викторианский стиль
                   </p>
                 </div>
               </Card>
@@ -155,79 +130,42 @@ const Index = () => {
         </section>
 
         <section className="container mx-auto px-4 py-16 pb-24">
-          <div className="max-w-2xl mx-auto">
-            <Card className="p-8 md:p-12 bg-[#F5E6D3]/95 border-4 border-[#8B4513] shadow-2xl">
-              <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold text-[#2C1810] mb-4">RSVP</h2>
-                <div className="flex items-center justify-center gap-3">
-                  <div className="h-px w-16 bg-[#8B4513]" />
-                  <Icon name="Mail" className="w-6 h-6 text-[#D4AF37]" />
-                  <div className="h-px w-16 bg-[#8B4513]" />
-                </div>
-                <p className="text-[#8B4513] mt-4">
-                  Подтвердите своё участие в фестивале
-                </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold text-[#2C1810] mb-4">Как добраться</h2>
+              <div className="flex items-center justify-center gap-3">
+                <div className="h-px w-16 bg-[#8B4513]" />
+                <Icon name="Map" className="w-6 h-6 text-[#D4AF37]" />
+                <div className="h-px w-16 bg-[#8B4513]" />
               </div>
+            </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-[#2C1810] font-semibold mb-2">
-                    Имя и фамилия
-                  </label>
-                  <Input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full bg-white/80 border-[#8B4513] text-[#2C1810] placeholder:text-[#8B4513]/50"
-                    placeholder="Ваше имя"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-[#2C1810] font-semibold mb-2">
-                    Email
-                  </label>
-                  <Input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full bg-white/80 border-[#8B4513] text-[#2C1810] placeholder:text-[#8B4513]/50"
-                    placeholder="your@email.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-[#2C1810] font-semibold mb-2">
-                    Сообщение (опционально)
-                  </label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full bg-white/80 border-[#8B4513] text-[#2C1810] placeholder:text-[#8B4513]/50 min-h-[120px]"
-                    placeholder="Расскажите о своём косплее..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-[#8B4513] hover:bg-[#2C1810] text-[#F5E6D3] font-bold text-lg py-6 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  <Icon name="Send" className="w-5 h-5 mr-2" />
-                  Подтвердить участие
-                </Button>
-              </form>
-
-              <div className="mt-8 pt-8 border-t-2 border-[#8B4513]/30 text-center">
-                <p className="text-sm text-[#8B4513] italic">
-                  По всем вопросам: festival@cotillion.ru
+            <Card className="p-4 bg-[#F5E6D3]/95 border-4 border-[#8B4513] shadow-2xl overflow-hidden">
+              <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=37.617700,55.755800&z=15&l=map&pt=37.617700,55.755800,pm2rdm"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  className="border-2 border-[#8B4513]/30"
+                  title="Карта места проведения"
+                />
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-[#2C1810] font-semibold text-lg mb-2">
+                  Центральный Выставочный Зал
+                </p>
+                <p className="text-[#8B4513] mb-4">
+                  г. Москва, ул. Примерная, д. 1
                 </p>
                 <div className="flex items-center justify-center gap-4 mt-4">
                   <Icon name="Instagram" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
                   <Icon name="Facebook" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
                   <Icon name="Twitter" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
                 </div>
+                <p className="text-sm text-[#8B4513] italic mt-4">
+                  По всем вопросам: festival@cotillion.ru
+                </p>
               </div>
             </Card>
           </div>
