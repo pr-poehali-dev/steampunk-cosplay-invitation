@@ -43,13 +43,9 @@ const Index = () => {
 
               <Card className="p-8 md:p-12 bg-[#F5E6D3]/95 border-4 border-[#8B4513] shadow-2xl backdrop-blur-sm">
                 <div className="relative">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#8B4513] text-[#F5E6D3] px-6 py-2 text-sm font-bold tracking-widest">
-                    ПРИГЛАШЕНИЕ
-                  </div>
-                  
-                  <div className="text-center space-y-6 mt-4">
-                    <p className="text-lg md:text-xl text-[#2C1810] leading-relaxed font-light">
-                      Уважаемые дамы и господа!
+                  <div className="text-center space-y-6">
+                    <p className="text-lg md:text-xl text-[#2C1810] leading-relaxed font-bold">
+                      Уважаемые Дамы и Господа!
                     </p>
                     <p className="text-base md:text-lg text-[#2C1810] leading-relaxed">
                       Приглашаем вас на грандиозный фестиваль косплея в стиле стимпанк. 
