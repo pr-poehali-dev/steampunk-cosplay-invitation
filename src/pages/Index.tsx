@@ -21,7 +21,7 @@ const Index = () => {
               <div className="text-center mb-12 animate-fade-in">
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <Icon name="Cog" className="w-12 h-12 text-[#8B4513] gear-rotate" />
-                  <h1 className="text-6xl md:text-8xl font-bold text-[#2C1810] tracking-wider">
+                  <h1 className="text-6xl md:text-8xl font-bold text-[#2C1810] tracking-wider" style={{fontFamily: 'Playfair Display, serif'}}>
                     КОТИЛЬОН
                   </h1>
                   <Icon name="Cog" className="w-12 h-12 text-[#8B4513] gear-rotate" style={{animationDirection: 'reverse'}} />
