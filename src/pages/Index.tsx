@@ -148,14 +148,6 @@ const Index = () => {
                 <p className="text-[#8B4513] mb-4">
                   г. Самара, ул. Льва Толстого, 109
                 </p>
-                <div className="flex items-center justify-center gap-4 mt-4">
-                  <Icon name="Instagram" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
-                  <Icon name="Facebook" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
-                  <Icon name="Twitter" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
-                </div>
-                <p className="text-sm text-[#8B4513] italic mt-4">
-                  По всем вопросам: festival@cotillion.ru
-                </p>
               </div>
             </Card>
           </div>
