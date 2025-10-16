@@ -92,27 +92,23 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513]">
-                <div className="flex items-start gap-4">
-                  <Icon name="Music" className="w-8 h-8 text-[#D4AF37] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-[#2C1810] mb-3">Программа</h3>
-                    <ul className="space-y-2 text-[#8B4513]">
-                      
-                    </ul>
-                  </div>
+              <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513] hover:shadow-xl transition-all duration-300 hover-scale">
+                <div className="text-center space-y-4">
+                  <Icon name="Music" className="w-12 h-12 text-[#D4AF37] mx-auto" />
+                  <h3 className="text-2xl font-bold text-[#2C1810]">Программа</h3>
+                  <p className="text-[#2C1810] text-xl font-bold">
+                    
+                  </p>
                 </div>
               </Card>
 
-              <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513]">
-                <div className="flex items-start gap-4">
-                  <Icon name="Award" className="w-8 h-8 text-[#D4AF37] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-[#2C1810] mb-3">Призы</h3>
-                    <ul className="space-y-2 text-[#8B4513]">
-                      
-                    </ul>
-                  </div>
+              <Card className="p-8 bg-[#F5E6D3]/95 border-2 border-[#8B4513] hover:shadow-xl transition-all duration-300 hover-scale">
+                <div className="text-center space-y-4">
+                  <Icon name="Award" className="w-12 h-12 text-[#D4AF37] mx-auto" />
+                  <h3 className="text-2xl font-bold text-[#2C1810]">Призы</h3>
+                  <p className="text-[#2C1810] text-xl font-bold">
+                    
+                  </p>
                 </div>
               </Card>
             </div>
