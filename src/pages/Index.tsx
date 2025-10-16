@@ -44,7 +44,7 @@ const Index = () => {
               <Card className="p-8 md:p-12 bg-[#F5E6D3]/95 border-4 border-[#8B4513] shadow-2xl backdrop-blur-sm">
                 <div className="relative">
                   <div className="text-center space-y-6">
-                    <p className="text-lg md:text-xl text-[#2C1810] leading-relaxed font-bold">
+                    <p className="text-2xl md:text-3xl text-[#2C1810] leading-relaxed font-bold">
                       Уважаемые Дамы и Господа!
                     </p>
                     <p className="text-lg md:text-2xl text-[#2C1810] leading-relaxed font-semibold">
