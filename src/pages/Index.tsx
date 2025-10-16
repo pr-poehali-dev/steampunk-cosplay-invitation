@@ -36,7 +36,7 @@ const Index = () => {
                 <p className="text-2xl md:text-3xl text-[#2C1810] font-semibold mb-2">
                   Косплей Фестиваль
                 </p>
-                <p className="text-xl text-[#8B4513] italic">
+                <p className="text-2xl md:text-3xl text-[#8B4513] italic font-semibold">
                   в стиле викторианской эпохи паровых машин
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Index = () => {
                     <p className="text-lg md:text-xl text-[#2C1810] leading-relaxed font-bold">
                       Уважаемые Дамы и Господа!
                     </p>
-                    <p className="text-base md:text-lg text-[#2C1810] leading-relaxed">
+                    <p className="text-lg md:text-2xl text-[#2C1810] leading-relaxed font-semibold">
                       Приглашаем вас на грандиозный фестиваль косплея в стиле стимпанк. 
                       Погрузитесь в атмосферу викторианской эпохи, где паровые машины 
                       встречаются с футуристическими изобретениями.
@@ -72,7 +72,7 @@ const Index = () => {
                 <div className="text-center space-y-4">
                   <Icon name="Calendar" className="w-12 h-12 text-[#D4AF37] mx-auto" />
                   <h3 className="text-2xl font-bold text-[#2C1810]">Когда</h3>
-                  <p className="text-[#8B4513] text-lg">
+                  <p className="text-[#2C1810] text-xl font-bold">
                     15 ноября 2025<br />
                     14:00 - 22:00
                   </p>
@@ -83,7 +83,7 @@ const Index = () => {
                 <div className="text-center space-y-4">
                   <Icon name="MapPin" className="w-12 h-12 text-[#D4AF37] mx-auto" />
                   <h3 className="text-2xl font-bold text-[#2C1810]">Где</h3>
-                  <p className="text-[#8B4513] text-lg">
+                  <p className="text-[#2C1810] text-xl font-bold">
                     Центральный<br />
                     Выставочный Зал
                   </p>
