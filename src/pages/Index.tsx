@@ -84,8 +84,8 @@ const Index = () => {
                   <Icon name="MapPin" className="w-12 h-12 text-[#D4AF37] mx-auto" />
                   <h3 className="text-2xl font-bold text-[#2C1810]">Где</h3>
                   <p className="text-[#2C1810] text-xl font-bold">
-                    Центральный<br />
-                    Выставочный Зал
+                    Самарский театр<br />
+                    юного зрителя
                   </p>
                 </div>
               </Card>
@@ -139,7 +139,7 @@ const Index = () => {
             <Card className="p-4 bg-[#F5E6D3]/95 border-4 border-[#8B4513] shadow-2xl overflow-hidden">
               <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=37.617700,55.755800&z=15&l=map&pt=37.617700,55.755800,pm2rdm"
+                  src="https://yandex.ru/map-widget/v1/?ll=50.097960,53.185850&z=16&l=map&pt=50.097960,53.185850,pm2rdm"
                   width="100%"
                   height="100%"
                   frameBorder="0"
@@ -149,10 +149,10 @@ const Index = () => {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-[#2C1810] font-semibold text-lg mb-2">
-                  Центральный Выставочный Зал
+                  Самарский театр юного зрителя
                 </p>
                 <p className="text-[#8B4513] mb-4">
-                  г. Москва, ул. Примерная, д. 1
+                  г. Самара, ул. Льва Толстого, 109
                 </p>
                 <div className="flex items-center justify-center gap-4 mt-4">
                   <Icon name="Instagram" className="w-6 h-6 text-[#8B4513] cursor-pointer hover:text-[#D4AF37] transition-colors" />
