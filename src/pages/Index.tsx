@@ -98,10 +98,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-bold text-[#2C1810] mb-3">Программа</h3>
                     <ul className="space-y-2 text-[#8B4513]">
-                      <li>• Конкурс косплея с призами</li>
-                      <li>• Мастер-классы по созданию реквизита</li>
-                      <li>• Викторианский бал</li>
-                      <li>• Фотозоны в стиле стимпанк</li>
+                      
                     </ul>
                   </div>
                 </div>
@@ -113,10 +110,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-bold text-[#2C1810] mb-3">Призы</h3>
                     <ul className="space-y-2 text-[#8B4513]">
-                      <li>• Лучший костюм - 50 000₽</li>
-                      <li>• Лучший реквизит - 30 000₽</li>
-                      <li>• Выбор зрителей - 20 000₽</li>
-                      <li>• Участие в профессиональной фотосессии</li>
+                      
                     </ul>
                   </div>
                 </div>
